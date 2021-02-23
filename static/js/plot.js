@@ -1,3 +1,24 @@
+//poplulate the drop down list
+
+// function makeFilters(data) {
+//     var dropDownList = [];
+//     //only push the first value of the decades to dropdown list to avoid duplicate
+//     data.map(x => x["Ref Pubyr"]).forEach(function(val) {
+//         //get the decade years
+//         if (dropDownList.find(element => element == parseInt(val / 10) * 10) == undefined) {
+//             dropDownList.push(parseInt(val / 10) * 10);
+//         }
+//     });
+//     // sort and loop thru each object
+//     dropDownList.sort((a, b) => b - a);
+//     $('#decade').html('');
+//     $('#decade').append(`<option value="all">All</option>`);
+//     dropDownList.forEach(function(val) {
+//         //append the option
+//         var newOption = `<option>${val}</option>`;
+//         $('#decade').append(newOption);
+//     });
+// }
 //set the  filter value
 
 function filterBarChart(data) {
@@ -132,12 +153,14 @@ function makePlot(data) {
     };
 
     var layout = {
+        title: "Change of Dinosaur Diet and Era",
         barmode: 'stack',
         titlefont: {
             size: 20,
             color: 'rgb(107, 107, 107)'
         },
-
+        paper_bgcolor: 'rgba(245,246,249,1)',
+        plot_bgcolor: 'rgba(245,246,249,1)',
         xaxis: {
             title: 'Geological Time Period',
         },
