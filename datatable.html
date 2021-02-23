@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Digging into Dinosaurs</title>
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" />
+    <!-- Our CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+    <!-- D3 -->
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
+
+    <!-- Bootswatch -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/sketchy/bootstrap.min.css">
+    <script type="text/javascript" src="/static/js/logic_table.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md">
+            <a class="navbar-brand" href="index.html">Digging Into Dinosaurs</a>
+            <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor03">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="datadig.html">Go Digging!</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About Us</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="datatable.html">Data</a>
+                        </li>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="hero text-center">
+            <h1>The Data</h1>
+        </div>
+        <br>
+        <div class="container">
+            <div class="row margin-top-50">
+                <div class="col-md-2">
+                    <aside class="filters">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <form id="form">
+                                    <div class="form-group">
+                                        <ul class="list-group" id="filters">
+                                            <br>
+                                            <li class="filter list-group-item">
+                                                <label for="date">Type Dinosaur Name</label>
+                                                <input class="form-control" id="nameInput" type="text" placeholder="name here">
+                                            </li>
+                                            <br>
+                                            <li class="filter list-group-item">
+                                                <label for="date">Choose a Diet</label>
+                                                <select class="form-control" id="diet">
+                                                    <option value="">All</option>
+                                                    <option value="herbivore">herbivore</option>
+                                                    <option value="omnivore">omnivore</option>
+                                                    <option value="carnivore">carnivore</option>
+                                                    <!-- <option value="carnivore, omnivore">carnivore, omnivore</option> -->
+                                                </select>
+                                            </li>
+                                            <br>
+                                            <li class="filter list-group-item">
+                                                <label for="date">Choose a Country</label>
+                                                <select class="form-control" id="country">
+                                                    <option value="">All</option>
+                                                    <option value="China">China</option>
+                                                    <option value="Canada">Canada</option>
+                                                    <option value="United States">United States</option>
+                                                    <option value="Mexico">Mexico</option>
+        
+                                                </select>
+                                            </li>
+                                            <br>
+                                            <li class="filter list-group-item">
+                                                <label for="date">Geological Time Period</label>
+                                                <select class="form-control" id="GTP">
+                                                    <option value="">All</option>
+                                                    <option value="Jurassic">Jurassic</option>
+                                                    <option value="Cretaceous">Cretaceous</option>
+                                                    <option value="Triassic">Triassic</option>
+
+                                                </select>
+                                            </li>
+                                            <br>
+                                        </ul>
+                                    </div>
+                                    <button id="filter-btn" type="button" class="btn btn-warning btn-lg">Filter Table</button>
+                                </form>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+                <div class="col-md-10">
+                    <div id="table-area" class="">
+                        <table id="ufo-table" class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th class="table-head">Lat</th>
+                                    <th class="table-head">Lng</th>
+                                    <th class="table-head">What Dinosaurs Eat</th>
+                                    <th class="table-head">Accepted Name</th>
+                                    <th class="table-head">Country</th>
+                                    <th class="table-head">Cc</th>
+                                    <th class="table-head">Diet</th>
+                                    <th class="table-head">Early Interval</th>
+                                    <th class="table-head">Formation</th>
+                                    <th class="table-head">Geological Interval</th>
+                                    <th class="table-head">Geological Time Period</th>
+                                    <th class="table-head">Ref Author</th>
+                                    <th class="table-head">Ref Pubyr</th>
+                                    <th class="table-head">State</th>
+                                    <th class="table-head">Max Ma</th>
+                                    <th class="table-head">Min Ma</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <span class="bottom">Dinosaurs</span>
+        </footer>
+    </div>
+
+</body>
+
+</html>

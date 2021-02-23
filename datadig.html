@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Digging Into Dinosaurs</title>
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" />
+    <!-- Bootstrap and Bootswatch CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/sketchy/bootstrap.min.css">
+
+    <!-- Our CSS -->
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+    <!-- Various JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!-- API key -->
+    <script type="text/javascript" src="/static/js/config.js"></script>
+    <!-- JS -->
+    <script type="text/javascript" src="/static/js/map.js"></script>
+    <script type="text/javascript" src="/static/js/stacked.js"></script>
+    <script type="text/javascript" src="/static/js/plot.js"></script>
+    <script type="text/javascript" src="/static/js/logic.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md">
+            <a class="navbar-brand" href="index.html">Digging Into Dinosaurs</a>
+            <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor03">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="datadig.html">Go Digging!</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="datatable.html">Data</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="first_row_map">
+            <h1 class="text-center">A World of T-Rexploration!</h1>
+            <p class="text-center">It's time to start digging! Using the map and chart below, explore where fossils were found, what kind of dinosaurs lived and what did they eat. Use the filter to see the decade each fossil was discovered. Watch how diets change through time
+                and see how dinosaurs stack up to one another!</p>
+            <div class='second row filters'>
+                <div class="col-md-12">
+                    <div class="col-md-12">
+
+                    </div>
+                    <div class="col-md-12" style="text-align:center">
+
+                        <h4 class="text-center"> Dig by Decade Discovered:</h4>
+                        <select id="decade">
+                            <option>All</option>
+                            <option>2010</option>
+                            <option>2000</option>
+                            <option>1990</option>
+                            <option>1980</option>
+                            <option>1970</option>
+                            <option>1960</option>
+                            <option>1950</option>
+                            <option>1940</option>
+                            <option>1930</option>
+                            <option>1920</option>
+                            <option>1910</option>
+                            <option>1900</option>
+                            <option>1890</option>
+                            <option>1880</option>
+                            <option>1870</option>
+                            <option>1860</option>
+                            <option>1850</option>
+                            <option>1840</option>
+                            <option>1830</option>
+                        </select>
+
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="mapcontainer">
+                                <div id="map"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+
+                </div>
+            </div>
+        </div>
+        <div class="viz_bucket">
+            <br>
+            <h2 class="text-center">The Results of your Dig!</h2>
+            <div class="row">
+                <div class="col-md-6" style="border: thin solid black">
+                    <h4 class="text-center">Dinos Found by Decade</h4>
+                    <div id="chart"></div>
+
+                </div>
+                <div class="col-md-6" style="border: thin solid black">
+                    <h4 class="text-center">Change of Dinosaur Diet and Era</h4>
+                    <div id="bar-plot"></div>
+                </div>
+            </div>
+            <div class="hero text-center">
+                <h1>Dig Into the Data Chart!</h1>
+                <p>Click here to see a table of this data!</p>
+                <a class="btn btn-warning btn-lg" href="datatable.html">To the Data!</a>
+            </div>
+
+</body>
+
+</html>
+</body>
+
+</html>
