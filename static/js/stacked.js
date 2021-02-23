@@ -49,7 +49,7 @@ function makeStackedAreaChart(data) {
 
     // var svgWidth = 960;
     var svgWidth = window.innerWidth / 2;
-    var svgHeight = 500;
+    var svgHeight = 425;
 
     var margin = {
         top: 20,

@@ -153,14 +153,12 @@ function makePlot(data) {
     };
 
     var layout = {
-        title: "Change of Dinosaur Diet and Era",
+
         barmode: 'stack',
         titlefont: {
             size: 20,
             color: 'rgb(107, 107, 107)'
         },
-        paper_bgcolor: 'rgba(245,246,249,1)',
-        plot_bgcolor: 'rgba(245,246,249,1)',
         xaxis: {
             title: 'Geological Time Period',
         },
