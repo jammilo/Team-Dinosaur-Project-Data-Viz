@@ -11,15 +11,16 @@ Dataset: ​Public Tableau Dashboard Data: https://public.tableau.com/profile/sh
 
 The site was designed to invite users to interact with it right away. The CSS uses Boostrap’s “sketchy” theme and images of fossil dinosaurs. Buttons were included on the home page to encourage users to access or “Go Digging” into the data. Giving users the option to see Map & Charts, the Data Table, or visit other wealthy research websites. Each page was designed to help lead the user to the next phase of exploration.
 
-<img width="828" alt="圖片" src="https://user-images.githubusercontent.com/70195202/116613686-9c28a100-a8fe-11eb-9520-3212a2c14178.png">
+   <img width="828" alt="圖片" src="https://user-images.githubusercontent.com/70195202/116613686-9c28a100-a8fe-11eb-9520-3212a2c14178.png">
 
 ## Data & Modeling Approach
 
 The data was downloaded from Public Tableau and extracted as a CSV before being connected using D3.js. No additional analysis or cleaning was completed on this dataset. The team created several visualizations using Plotly & Mapbox.
 
    1. World Of T-Rexploration Map:​ Designed using Mapbox to allow the user to visualize where fossils were found. The pirate map was implemented to carry the theme.
+  
      
-     <img width="701" alt="圖片" src="https://user-images.githubusercontent.com/70195202/116614076-122d0800-a8ff-11eb-97c3-081ec4f52c9c.png">
+   <img width="701" alt="圖片" src="https://user-images.githubusercontent.com/70195202/116614076-122d0800-a8ff-11eb-97c3-081ec4f52c9c.png">
 
 
 
