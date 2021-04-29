@@ -25,6 +25,14 @@ The data was downloaded from Public Tableau and extracted as a CSV before being 
 
    * Stacked Area Chart:  Designed with Plotly, a stacked area chart was utilized to visualize how many fossils were discovered, by decade, in each of the three geological time periods that dinosaurs existed. The intention was to mimic, visually, the stratified nature of rock formations where fossils are truly found.
 
+   <img width="980" alt="圖片" src="https://user-images.githubusercontent.com/70195202/116615310-b82d4200-a900-11eb-953f-9cc03498fa9d.png">
+   
+   * Dynamic Bar Chart​: Designed with Plotly, this chart visualizes dinosaur diet by era. For the technical coding challenge, we came across some hurdles to plot the length of dinosaur count for each diet for y axis . We then discovered the reason why the bar for Cretaceous period is noticeably higher than the other two periods in this chart, and came to the conclusion that many rocks provided clear and easily accessed details to Cretaceous period because they have not been deformed or eroded and are relatively close to the surface comparing to the other two.
+   
+   <img width="980" alt="圖片" src="https://user-images.githubusercontent.com/70195202/116615410-de52e200-a900-11eb-85a9-71747c185cc0.png">
+
+
+
 ## Background
 
 What good is data without a good plot to tell the story?
