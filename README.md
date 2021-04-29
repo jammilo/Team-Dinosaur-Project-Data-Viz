@@ -5,7 +5,7 @@
 
 The purpose of this project was to create a user-friendly visual dashboard of a dataset using a Python Flask powered API, HTML/CSS, and JavaScript. Our group decided to create a dashboard of interactive fun facts about dinosaurs. We wanted users to be able to “dig” into the fossil data and discover facts about dinosaurs in a unique way, allowing the user to apply a single filter to multiple visualizations at once. The dataset is from an existing Public Tableau Dashboard entitled “When Dinosaurs Ruled the Earth”. This dataset had 2463 records of dinosaur fossils discovered from 1836 - 2018 and was a large enough dataset to help create the base of our project.
 
-Dataset: ​Public Tableau Dashboard Data: https://public.tableau.com/profile/shawn.moore#!/vizhome/WhenDinosaursRuledTheEarth_0/Dashboard1
+Dataset: Public Tableau Dashboard Data: https://public.tableau.com/profile/shawn.moore#!/vizhome/WhenDinosaursRuledTheEarth_0/Dashboard1
 
 ## Site Design & Inspiration
 
@@ -23,7 +23,7 @@ The data was downloaded from Public Tableau and extracted as a CSV before being 
    <img width="980" alt="圖片" src="https://user-images.githubusercontent.com/70195202/116614076-122d0800-a8ff-11eb-97c3-081ec4f52c9c.png">
 
 
-   * Stacked Area Chart: ​ Designed with Plotly, a stacked area chart was utilized to visualize how many fossils were discovered, by decade, in each of the three geological time periods that dinosaurs existed. The intention was to mimic, visually, the stratified nature of rock formations where fossils are truly found.
+   * Stacked Area Chart:  Designed with Plotly, a stacked area chart was utilized to visualize how many fossils were discovered, by decade, in each of the three geological time periods that dinosaurs existed. The intention was to mimic, visually, the stratified nature of rock formations where fossils are truly found.
 
 ## Background
 
