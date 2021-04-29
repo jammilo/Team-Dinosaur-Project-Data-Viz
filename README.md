@@ -1,5 +1,12 @@
-# Matplotlib-Data-Visualization
-# The power of plots applys to a real-world situation and dataset:
+# Digging Into Dinosaurs
+
+
+## Project Description/Outline
+An interactive website for all your fun facts about dinosaurs! See where they lived, what they ate, facts about individual dinosaurs and when they lived!
+
+
+
+
 
 ## Background
 
