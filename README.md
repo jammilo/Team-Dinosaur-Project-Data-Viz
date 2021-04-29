@@ -17,13 +17,13 @@ The site was designed to invite users to interact with it right away. The CSS us
 
 The data was downloaded from Public Tableau and extracted as a CSV before being connected using D3.js. No additional analysis or cleaning was completed on this dataset. The team created several visualizations using Plotly & Mapbox.
 
-   1. World Of T-Rexploration Map:​ Designed using Mapbox to allow the user to visualize where fossils were found. The pirate map was implemented to carry the theme.
+   * World Of T-Rexploration Map: Designed using Mapbox to allow the user to visualize where fossils were found. The pirate map was implemented to carry the theme.
   
      
    <img width="980" alt="圖片" src="https://user-images.githubusercontent.com/70195202/116614076-122d0800-a8ff-11eb-97c3-081ec4f52c9c.png">
 
 
-
+   * Stacked Area Chart: ​ Designed with Plotly, a stacked area chart was utilized to visualize how many fossils were discovered, by decade, in each of the three geological time periods that dinosaurs existed. The intention was to mimic, visually, the stratified nature of rock formations where fossils are truly found.
 
 ## Background
 
