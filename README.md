@@ -41,7 +41,7 @@ The data was downloaded from Public Tableau and extracted as a CSV before being 
 
 The dashboard met all the team’s required specifications and launched successfully once deployed to github. The site is clean and guided and allows for fun but thorough data exploration. The site could be improved by adding additional visualizations and adding more data for exploration. Although the data set included over 2000 records, it was limited to only 4 countries of fossils.
 
-If you want to learn more about our web app, please check out our [site](https://jammilo.github.io/team_dinosaur_project/index.html).
+If you want to learn more about our web app, please check out our [site](https://jammilo.github.io/Team-Dinosaur-Project-Data-Viz/).
 
 
 ---
