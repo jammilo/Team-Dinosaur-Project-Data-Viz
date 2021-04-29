@@ -1,10 +1,34 @@
 # Digging Into Dinosaurs
 
 
+
+
+## Objectives
+
+An interactive website for all your fun facts about dinosaurs! See where they lived, what they ate, facts about individual dinosaurs and when they lived.
+
+##Visualizations:
+
+Maps:
+
+* World Map: Where are dinosaurs found? Filters: Country, State, Diet.
+
+Explore:
+
+* Dinosaur Bar Charts: Diet, Time Period, Age, Year Found
+
+* Timeline Graphic: Timeline with hovering dinosaur graphics
+
+* Dinosaur Bios: Filter that provides photo and table of information
+
+* Paleontology Bar Charts: Author, Year Found
+
 ## Project Description/Outline
-An interactive website for all your fun facts about dinosaurs! See where they lived, what they ate, facts about individual dinosaurs and when they lived!
 
-
+The purpose of this project was to create a user-friendly visual dashboard of a dataset using a Python Flask powered API, HTML/CSS, and JavaScript. Our group decided to create a dashboard of interactive fun facts about dinosaurs. We wanted users to be able to “dig” into the fossil data and discover facts about dinosaurs in a unique way, allowing the user to apply a single filter to multiple visualizations at once. The dataset is from an existing Public Tableau Dashboard entitled “When Dinosaurs Ruled the Earth”. This dataset had 2463 records of dinosaur fossils discovered from 1836 - 2018 and was a large enough dataset to help create the base of our project.
+Dataset: ​Public Tableau Dashboard Data: https://public.tableau.com/profile/shawn.moore#!/vizhome/WhenDinosaursRuledTheEarth_0/Da shboard1
+Site Design & Inspiration:
+The site was designed to invite users to interact with it right away. The CSS uses Boostrap’s “sketchy” theme and images of fossil dinosaurs. Buttons were included on the home page to encourage users to access or “Go Digging” into the data. Giving users the option to see Map & Charts, the Data Table, or visit other wealthy research websites. Each page was designed to help lead the user to the next phase of exploration.
 
 
 
