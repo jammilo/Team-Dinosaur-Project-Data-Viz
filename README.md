@@ -5,6 +5,8 @@
 
 The purpose of this project was to create a user-friendly visual dashboard of a dataset using a `Python Flask` `powered API`, `HTML/CSS`, and `JavaScript`. Our group decided to create a dashboard of interactive fun facts about dinosaurs. We wanted users to be able to “dig” into the fossil data and discover facts about dinosaurs in a unique way, allowing the user to apply a single filter to multiple visualizations at once. The dataset is from an existing Public Tableau Dashboard entitled “When Dinosaurs Ruled the Earth”. This dataset had 2463 records of dinosaur fossils discovered from 1836 - 2018 and was a large enough dataset to help create the base of our project.
 
+Our interactive map is designed to help you identify what year and what fossils have been found in a particular area. If you want to learn more about our web app, please check out our [site](https://jammilo.github.io/Team-Dinosaur-Project-Data-Viz/).
+
 Dataset: Public Tableau Dashboard Data: https://public.tableau.com/profile/shawn.moore#!/vizhome/WhenDinosaursRuledTheEarth_0/Dashboard1
 
 
@@ -40,8 +42,6 @@ The data was downloaded from Public Tableau and extracted as a CSV before being 
 ## Conclusion
 
 The dashboard met all the team’s required specifications and launched successfully once deployed to github. The site is clean and guided and allows for fun but thorough data exploration. The site could be improved by adding additional visualizations and adding more data for exploration. Although the data set included over 2000 records, it was limited to only 4 countries of fossils.
-
-If you want to learn more about our web app, please check out our [site](https://jammilo.github.io/Team-Dinosaur-Project-Data-Viz/).
 
 
 ---
