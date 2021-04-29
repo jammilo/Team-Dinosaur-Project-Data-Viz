@@ -20,7 +20,7 @@ The data was downloaded from Public Tableau and extracted as a CSV before being 
    1. World Of T-Rexploration Map:​ Designed using Mapbox to allow the user to visualize where fossils were found. The pirate map was implemented to carry the theme.
   
      
-   <img width="701" alt="圖片" src="https://user-images.githubusercontent.com/70195202/116614076-122d0800-a8ff-11eb-97c3-081ec4f52c9c.png">
+   <img width="828" alt="圖片" src="https://user-images.githubusercontent.com/70195202/116614076-122d0800-a8ff-11eb-97c3-081ec4f52c9c.png">
 
 
 
